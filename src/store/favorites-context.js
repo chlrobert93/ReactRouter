@@ -4,10 +4,13 @@ const FavoritesContext = createContext({
   /*Valor inicial*/
   favorites: [],
   totalFavorites: 0,
+  addFavorite:(favoriteMeetup) =>{},
+  removeFavorite:(meetupId) => {},
+  itemIsFavorite:(meetupId) => {},
 });
 
 //Sera el responsable de actualizar los valores de contexto
-function FavoritesContextProvider(props) {
+export function FavoritesContextProvider(props) {
   const [userFavorites, setUserFavorites] = useState([]);
 
   function addFavoriteHandler(favoriteMeetup) {
@@ -22,7 +25,7 @@ function FavoritesContextProvider(props) {
     );
   }
 
-  //Ayudar si un articulo es favorito o no
+  //Ayuda si un articulo es favorito o no
   function itemIsFavoriteHandler(meetupId) {
     userFavorites.some((meetup) => meetup.id === meetupId);
   }
@@ -31,6 +34,9 @@ function FavoritesContextProvider(props) {
   const context = {
     favorites: userFavorites,
     totalFavorites: userFavorites.length,
+    addFavorite: addFavoriteHandler,
+    removeFavorite: removeFavoriteHandler,
+    itemIsFavorite: itemIsFavoriteHandler,
   };
 
   return (
@@ -39,3 +45,5 @@ function FavoritesContextProvider(props) {
     </FavoritesContext.Provider>
   );
 }
+
+export default FavoritesContext;
