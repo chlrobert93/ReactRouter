@@ -48,7 +48,7 @@ function AllMeetup() {
 
   return (
     <section>
-      <h1>All Meetups</h1>
+      <h1>All Card</h1>
       <MeetupList meetups={loadedMeetups} />
     </section>
   );

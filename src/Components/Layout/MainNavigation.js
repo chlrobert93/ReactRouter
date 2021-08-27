@@ -10,11 +10,11 @@ function MainNavigation() {
    
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>React Meetups</div>
+      <div className={classes.logo}>React Card</div>
       <nav>
         <ul>
           <li>
-            <Link to="/">All Meetup</Link>
+            <Link to="/">All Card</Link>
           </li>
           <li>
             <Link to="/favorites">
@@ -23,7 +23,7 @@ function MainNavigation() {
               </Link>
           </li>
           <li>
-            <Link to="/new/meetup">New Meetup</Link>
+            <Link to="/new/meetup">New Card</Link>
           </li>
         </ul>
       </nav>

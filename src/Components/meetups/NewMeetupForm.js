@@ -36,11 +36,11 @@ function NewMeetupForm(props) {
     <Card>
       <form className={classes.form} onSubmit={onFrormSubmit}>
         <div className={classes.control}>
-          <label htmlFor="title">Meetup Title</label>
+          <label htmlFor="title">Name</label>
           <input type="text" required id="title" ref={titleInputRef} />
         </div>
         <div className={classes.control}>
-            <label htmlFor='image'>Meetup Iamge</label>
+            <label htmlFor='image'>Iamge</label>
             <input type='url' required id='image' ref={imageInputRef} />
 
         </div>
@@ -54,7 +54,7 @@ function NewMeetupForm(props) {
 
         </div>
         <div className={classes.actions}>
-            <button>Add Meetup</button>
+            <button>Add card</button>
 
         </div>
       </form>

@@ -4,6 +4,8 @@
   
   .control {
     margin-bottom: 0.5rem;
+    color: #fff;
+    text-shadow: 0 0 8px #f0ad4e, 0 0 2px #f0ad4e, 0 0 10px #f0ad4e, 0 0 6px #f0ad4e, 0 0 20px #f0ad4e, 0 0 20px #f0ad4e, 0 0 1px #f0ad4e, 0 0 12px #f0ad4e;
   }
   
   .control label {
