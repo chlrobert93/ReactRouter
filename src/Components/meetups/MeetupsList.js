@@ -2,13 +2,14 @@ import MeetupItem from './MeetupItem';
 import classes from './MeetupList.module.css';
 
 
+import {List,Item} from '../meetups/styles';
 
 function MeetupList(props) {
 
     
   return (
     
-    <ul className={classes.list}>
+    <List className={classes.list}>
       {props.meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
@@ -19,7 +20,7 @@ function MeetupList(props) {
           description={meetup.description}
         />
       ))}
-    </ul>
+    </List>
     
   );
 }

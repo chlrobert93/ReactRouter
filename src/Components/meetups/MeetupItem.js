@@ -4,7 +4,7 @@ import classes from "./MeetupItem.module.css";
 import Card from "../ui/Card";
 import FavoritesContext from "../../store/favorites-context";
 
-
+import {List,Item} from '../meetups/styles';
 function MeetupItem(props) {
   //console.log(props);
   //Para usar createContext
@@ -28,7 +28,7 @@ function MeetupItem(props) {
   }
 
   return (
-    <li className={classes.item}>
+    <Item className={classes.item}>
       <Card>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
@@ -44,7 +44,7 @@ function MeetupItem(props) {
           </button>
         </div>
       </Card>
-    </li>
+    </Item>
   );
 }
 
