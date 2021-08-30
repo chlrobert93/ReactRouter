@@ -9,7 +9,7 @@ function MeetupList(props) {
     
   return (
     
-    <List className={classes.list}>
+    <ul className={classes.list}>
       {props.meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
@@ -20,7 +20,7 @@ function MeetupList(props) {
           description={meetup.description}
         />
       ))}
-    </List>
+    </ul>
     
   );
 }

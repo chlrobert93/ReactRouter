@@ -28,7 +28,7 @@ function MeetupItem(props) {
   }
 
   return (
-    <Item className={classes.item}>
+    <li className={classes.item}>
       <Card>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
@@ -44,7 +44,7 @@ function MeetupItem(props) {
           </button>
         </div>
       </Card>
-    </Item>
+    </li>
   );
 }
 
