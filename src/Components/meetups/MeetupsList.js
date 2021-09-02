@@ -2,7 +2,7 @@ import MeetupItem from './MeetupItem';
 import classes from './MeetupList.module.css';
 
 
-import {List,Item} from '../meetups/styles';
+//import {List,Item} from '../meetups/styles';
 
 function MeetupList(props) {
 

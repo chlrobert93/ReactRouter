@@ -4,7 +4,7 @@ import classes from "./MeetupItem.module.css";
 import Card from "../ui/Card";
 import FavoritesContext from "../../store/favorites-context";
 
-import {List,Item} from '../meetups/styles';
+//import {List,Item} from '../meetups/styles';
 function MeetupItem(props) {
   //console.log(props);
   //Para usar createContext

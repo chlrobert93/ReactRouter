@@ -2,6 +2,7 @@ import { useContext } from 'react';
 
 import FavoritesContext from '../store/favorites-context';
 import MeetupList from '../Components/meetups/MeetupsList';
+import MensajeCard from '../Components/mensajes/MensajeCard';
 
 function Favorites(){
    const favoritesCtx = useContext( FavoritesContext);
@@ -9,7 +10,7 @@ function Favorites(){
    let content;
 console.log(favoritesCtx.totalFavorites )
    if(favoritesCtx.totalFavorites === 0){
-       content = <p>You got no favorites yet. Start adding some?</p>
+       content = <p><MensajeCard /></p>
 
     }else{
         content = <MeetupList meetups={favoritesCtx.favorites} />
