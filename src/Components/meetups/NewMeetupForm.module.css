@@ -1,5 +1,8 @@
 .form {
     padding: 1rem;
+
+    font-size: 1.5rem;
+
   }
   
   .control {
@@ -7,12 +10,41 @@
     color: #fff;
     text-shadow: 0 0 8px #f0ad4e, 0 0 2px #f0ad4e, 0 0 10px #f0ad4e, 0 0 6px #f0ad4e, 0 0 20px #f0ad4e, 0 0 20px #f0ad4e, 0 0 1px #f0ad4e, 0 0 12px #f0ad4e;
   }
+
+  .labetTetxt{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-shadow: 0 0 8px #f0ad4e, 0 0 2px #f0ad4e, 0 0 10px #f0ad4e, 0 0 6px #f0ad4e, 0 0 20px #f0ad4e, 0 0 20px #f0ad4e, 0 0 1px #f0ad4e, 0 0 12px #f0ad4e;
+    font-weight: bold;
+    margin-bottom: 2.9rem;
+  
+  }
   
   .control label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    border: none;
   }
+  .inputForm{
+    font-size: 1.5rem;
+    font-family: inherit;
+    color:inherit;
+    padding: .8rem .1rem;
+    border-radius: 2px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width:100%;
+    display:block;
+    transition: all .3s;
+    outline: none;
+    margin-top: 1rem;
+  }
+
+  .inputForm:focus:invalid {
+    border-bottom: 5px solid rgb(9, 255, 132);
+}
   
   .control input,
   .control textarea {
@@ -22,6 +54,7 @@
     border: 1px solid #ccc;
     padding: 0.25rem;
     width: 100%;
+    border: none;
   }
   
   .actions {

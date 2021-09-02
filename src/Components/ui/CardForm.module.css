@@ -1,0 +1,12 @@
+.cardForm {
+  background: linear-gradient(to left, #337aff, #20bdff, #a5fecb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 70rem;
+  height: auto;
+  margin: 0 auto;
+  }
+
+  .cardForm:hover{
+    transform:  translateY(-0.9px) scale(1.05);
+}

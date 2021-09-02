@@ -1,15 +1,14 @@
 import { useRef } from "react";
-import Card from "../ui/Card";
+import CardForm from "../ui/CardForm";
 import classes from "./NewMeetupForm.module.css";
 
 function NewMeetupForm(props) {
-   
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
   const descriptionInputRef = useRef();
 
-  function onFrormSubmit (event) {
+  function onFrormSubmit(event) {
     event.preventDefault();
 
     const enteredTtitle = titleInputRef.current.value;
@@ -18,47 +17,65 @@ function NewMeetupForm(props) {
     const enteredDescription = descriptionInputRef.current.value;
 
     const meetupData = {
-      
       title: enteredTtitle,
       image: enteredImage,
       address: enteredAddress,
       description: enteredDescription,
-
     };
 
-   props.onAddMeetup(meetupData);
- }
-
-
-
+    props.onAddMeetup(meetupData);
+  }
 
   return (
-    <Card>
+    <CardForm>
       <form className={classes.form} onSubmit={onFrormSubmit}>
-        <div className={classes.control}>
-          <label htmlFor="title">Name</label>
-          <input type="text" required id="title" ref={titleInputRef} />
+        <div>
+          <label htmlFor="title" className={classes.labetTetxt}>
+            Name
+          </label>
+          <input
+            type="text"
+            className={classes.inputForm}
+            required
+            id="title"
+            ref={titleInputRef}
+          />
         </div>
-        <div className={classes.control}>
-            <label htmlFor='image'>Iamge</label>
-            <input type='url' required id='image' ref={imageInputRef} />
-
+        <div>
+          <label htmlFor="image" className={classes.labetTetxt}>Image</label>
+          <input
+            type="url"
+            className={classes.inputForm}
+            required
+            id="image"
+            ref={imageInputRef}
+          />
         </div>
-        <div className={classes.control}>
-            <label htmlFor='addres'>Address</label>
-            <input type='text' required id='addres' ref={addressInputRef} />
+        <div>
+          <label htmlFor="addres" className={classes.labetTetxt}>Address</label>
+          <input
+            type="text"
+            className={classes.inputForm}
+            required
+            id="addres"
+            ref={addressInputRef}
+          />
         </div>
-        <div className={classes.control}>
-            <label htmlFor='description'>Description</label>
-            <textarea id='description' required rows='5' ref={descriptionInputRef} ></textarea>
-
+        <div>
+          <label htmlFor="description" className={classes.labetTetxt}>Description</label>
+          <textarea
+            id="description"
+            className={classes.inputForm}
+            required
+            rows="5"
+            ref={descriptionInputRef}
+          ></textarea>
         </div>
         <div className={classes.actions}>
-            <button>Add card</button>
-
+          <button>Add card</button>
         </div>
       </form>
-    </Card>
+    </CardForm>
   );
 }
 

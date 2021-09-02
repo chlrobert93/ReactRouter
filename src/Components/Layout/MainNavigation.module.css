@@ -10,10 +10,11 @@
     background: -webkit-linear-gradient(to bottom, #005c97, #363795); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #005c97, #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 0 10%;
+  
   }
   
   .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     text-shadow: 0 0 8px #77bb3f, 0 0 2px #77bb3f, 0 0 10px #77bb3f, 0 0 6px #77bb3f, 0 0 20px #77bb3f, 0 0 20px #77bb3f, 0 0 1px #77bb3f, 0 0 12px #77bb3f;
     font-weight: bold;
@@ -33,8 +34,7 @@
   
   .header a {
     text-decoration: none;
-    font-size: 1.5rem;
-   
+    font-size: 2rem; 
     color: #fff;
     text-shadow: 0 0 8px #77bb3f, 0 0 2px #77bb3f, 0 0 10px #77bb3f, 0 0 6px #77bb3f, 0 0 20px #77bb3f, 0 0 20px #77bb3f, 0 0 1px #77bb3f, 0 0 12px #77bb3f;
   }

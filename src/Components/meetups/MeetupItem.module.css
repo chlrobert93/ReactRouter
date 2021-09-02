@@ -23,8 +23,16 @@
 .content h3 {
   font-size: 1.25rem;
   color: #2c292b;
+  font-size: 2rem;
+  margin-top: .3px;
 }
 
+
+.description_text,
+.address_text{
+font-size: 1.3rem;
+
+}
 .actions {
   padding: 1.5rem;
   text-align: center;
@@ -39,6 +47,7 @@
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   background-color: #fffcf2;
+  font-size: 1.4rem;
 }
 
 .actions button:hover,
